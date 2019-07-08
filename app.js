@@ -7,7 +7,7 @@ let DATE = new Date();
 
 // Git Auto Commit
 const autoCommit = () => {
-  if (shell.exec('git commit -am "Auto-commit"').code !== 0) {
+  if (shell.exec(`git commit -am "${DATE} Auto-commit"`).code !== 0) {
     shell.echo("Error: Git commit failed");
     shell.exit(1);
   }else{
