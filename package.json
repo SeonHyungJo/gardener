@@ -4,7 +4,8 @@
   "description": "나만 없어 정원사. 나도 정원사 고용해보자\r ssh test",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/SeonHyungJo/gardener/issues"
   },
-  "homepage": "https://github.com/SeonHyungJo/gardener#readme"
+  "homepage": "https://github.com/SeonHyungJo/gardener#readme",
+  "dependencies": {
+    "shelljs": "^0.8.3"
+  }
 }
