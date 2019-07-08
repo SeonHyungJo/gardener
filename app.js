@@ -10,11 +10,8 @@ const autoCommit = () => {
   if (shell.exec('git commit -am "Auto-commit"').code !== 0) {
     shell.echo("Error: Git commit failed");
     shell.exit(1);
-  }
-
-  if (shell.exec('git push origin master').code !== 0) {
-    shell.echo("Error: Git commit failed");
-    shell.exit(1);
+  }else{
+    shell.exec('git push origin master')
   }
 };
 
