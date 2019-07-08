@@ -1,0 +1,20 @@
+{
+  "name": "gardener",
+  "version": "0.0.1",
+  "description": "나만 없어 정원사. 나도 정원사 고용해보자\r ssh test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeonHyungJo/gardener.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeonHyungJo/gardener/issues"
+  },
+  "homepage": "https://github.com/SeonHyungJo/gardener#readme"
+}
