@@ -11,7 +11,7 @@ const autoCommit = () => {
     shell.echo("Error: Git commit failed");
     shell.exit(1);
   }else{
-    shell.exec('git push origin master')
+    shell.exec('git push origin2 master')
   }
 };
 
