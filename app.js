@@ -31,9 +31,10 @@ const giveWater = () => {
         if (err) {
           console.warn(err);
           reject()
+        }else{
+          resolve()
         }
       });
-      resolve()
     });
   });
 };
