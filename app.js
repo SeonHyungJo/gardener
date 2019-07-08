@@ -25,7 +25,7 @@ const giveWater = () => {
       }
 
       console.log("기존 내용 ===>", data);
-      const newText = data + `${DATE} 무럭 무럭 자라라 \n`;
+      const newText = data + `${DATE} 무럭 무럭 자라라<br/>`;
 
       fs.writeFile(gardenName, newText, utf8, () => {
         if (err) {
@@ -39,6 +39,8 @@ const giveWater = () => {
   });
 };
 
+giveWater().then(autoCommit);
+
 setInterval(()=>{
   giveWater().then(autoCommit);
-}, 5000)
+}, 21600000)
