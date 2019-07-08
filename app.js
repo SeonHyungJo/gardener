@@ -44,4 +44,4 @@ giveWater().then(autoCommit);
 //21600000
 setInterval(()=>{
   giveWater().then(autoCommit);
-}, 300000)
+}, 21600000)
