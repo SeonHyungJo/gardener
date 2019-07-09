@@ -47,7 +47,7 @@ const giveWater = () => {
 // Git Auto Commit
 const autoCommit = () => {
   return new Promise((resolve, reject) => {
-    if (shell.exec(`git add ${gardenName}`).code !== 0 || shell.exec(`git commit -m "${DATE} Auto-commit"`).code !== 0) {
+    if (shell.exec(shell.exec(`git commit -am "${DATE} Auto-commit"`).code !== 0) {
       shell.echo("Error: Git commit failed");
       shell.exit(1)
 
@@ -89,7 +89,7 @@ const sendMessage = async () => {
 
 
 
-schedule.scheduleJob('* */6 * * *', function() {
+schedule.scheduleJob('*/1 * * * * *', function() {
   DATE = dayjs(new Date).format(`YYYY년 MM월 DD일 HH:mm:ss`)
 
   console.log(DATE, '=====물주기를 시작합니다.=====')
