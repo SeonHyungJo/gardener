@@ -47,7 +47,7 @@ const giveWater = () => {
 // Git Auto Commit
 const autoCommit = () => {
   return new Promise((resolve, reject) => {
-    if (shell.exec(shell.exec(`git commit -am "${DATE} Auto-commit"`).code !== 0) {
+    if (shell.exec(`git commit -am "${DATE} Auto-commit"`).code !== 0) {
       shell.echo("Error: Git commit failed");
       shell.exit(1)
 
