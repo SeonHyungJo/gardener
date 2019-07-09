@@ -89,7 +89,7 @@ const sendMessage = async () => {
 
 
 
-schedule.scheduleJob('*/1 * * * * *', function() {
+schedule.scheduleJob('* */6 * * *', function() {
   DATE = dayjs(new Date).format(`YYYY년 MM월 DD일 HH:mm:ss`)
 
   console.log(DATE, '=====물주기를 시작합니다.=====')
