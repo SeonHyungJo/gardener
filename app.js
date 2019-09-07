@@ -53,7 +53,7 @@ const autoCommit = () => {
 
       reject()
     } else {
-      shell.exec("git push origin2 master")
+      shell.exec("git push origin master")
       resolve()
     }
   });
